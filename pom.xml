@@ -6,7 +6,21 @@
 
     <groupId>com.betmonkey</groupId>
     <artifactId>betmonkey-data</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <distributionManagement>
+
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://ec2-54-171-165-206.eu-west-1.compute.amazonaws.com:8081/nexus/content/repositories/releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://ec2-54-171-165-206.eu-west-1.compute.amazonaws.com:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
 
 
 </project>
